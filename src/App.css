@@ -1,0 +1,153 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-child(2n + 1) {
+  background: #0f172a;
+  color: white
+}
+
+.header {
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  user-select: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.header-text {
+  font-size: 4rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: -0.5ch;
+  text-align: center;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0.03em 0.03em 0 rgb(0, 255, 213),
+        0.06em 0.06em 0 rgb(154, 192, 18),
+        0.09em 0.09em 0 rgb(226, 143, 87),
+        0.11em 0.11em 0 rgb(161, 24, 127);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 4rem;
+}
+
+.icons {
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.icons:hover {
+  color: aqua;
+  transform: scale(1.1);
+}
+
+.anchor {
+  text-decoration: none;
+  outline: none;
+  color: unset;
+}
+
+
+
+@media (min-width: 640px){
+  .header{
+    flex-direction: column;
+  }
+  .header-text{
+    writing-mode: unset;
+  text-orientation: unset;
+  letter-spacing: unset;
+  font-size: 6rem;
+  }
+  .nav-items{
+    flex-direction: row;
+    font-size: 5.5rem;
+    gap: 50px;
+  }
+}
+
+.about-wrapper {
+  width: 850px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-content {
+  margin: 40px 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  text-align: justify;
+  gap: 20px
+}
+
+.about-p {
+  border: 1px solid #0f172a;
+  padding: 8px;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.about-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 4rem;
+  padding: 40px 0;
+}
+.about-link {
+  text-decoration: none;
+}
+
+@media (min-width: 640px){
+  .about-head{
+    font-size: 4rem;
+    -webkit-text-stroke: 2px #0f172a;
+  }
+  .section-content{
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+  .about-p {
+    padding: 24px;
+  }
+  .about-icons {
+    font-size: 5rem;
+  }
+}
