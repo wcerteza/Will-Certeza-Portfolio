@@ -10,7 +10,7 @@ const Experience = () => {
         <div className={styles.sectionContent}>
           <ListEntry
             title={'General Assembly Immersive Bootcamp'}
-            date={'Apr 2023 - Present'}
+            date={'Apr 2023 - July 2023'}
           >
             <li>Full Stack remote immersive bootcamp.</li>
             <li>

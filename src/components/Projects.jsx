@@ -4,6 +4,7 @@ import ImgOverlay from './ImgOverlay'
 import wordle from '../assets/wordle.png'
 import devhive from '../assets/devhive.png'
 import zephyr from '../assets/zephyr.png'
+import coindash from '../assets/coindash.png'
 
 const Projects = () => {
   return (
@@ -38,6 +39,19 @@ const Projects = () => {
             Cutting edge alternative to traditional online forums. Powered by
             PostgreSQL + Django + Python. Utilizes HTTP API for random user
             avatars.
+          </ImgOverlay>
+          <ImgOverlay
+            imgSrc={coindash}
+            title={'Coin Dash'}
+            projectLink={'https://wc-coin-dash.surge.sh/'}
+            githubLink={'https://github.com/wcerteza/Zephyr'}
+          >
+            This project is a MERN stack application with integrated OpenAI API
+            for crypto information. It utilizes Chart.js for dynamic chart
+            visualization and Coingecko API for cryptocurrency data on both the
+            front-end and backend. The result is a powerful web application with
+            advanced features, real-time cryptocurrency insights, and seamless
+            user experience.
           </ImgOverlay>
         </div>
       </div>
